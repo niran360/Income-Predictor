@@ -24,10 +24,10 @@ class MLTests(TestCase):
         }
         my_alg = RandomForestClassifier()
         response = my_alg.compute_prediction(input_data)
-        # print(response)
-        # self.assertEqual('OK', response['status'])
-        # self.assertTrue('label' in response)
-        # self.assertEqual('<=50K', response['label'])
+        print(response)
+        self.assertEqual('OK', response['status'])
+        self.assertTrue('label' in response)
+        self.assertEqual('<=50K', response['label'])
         
     def test_registry(self):
         registry = MLRegistry()
@@ -37,7 +37,7 @@ class MLTests(TestCase):
         algorithm_name = "random forest"
         algorithm_status = "production"
         algorithm_version = "0.0.1"
-        algorithm_owner = "Ayo"
+        algorithm_owner = "Piotr"
         algorithm_description = "Random Forest with simple pre- and post-processing"
         algorithm_code = inspect.getsource(RandomForestClassifier)
         # add to registry

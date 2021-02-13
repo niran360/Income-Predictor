@@ -25,7 +25,7 @@ SECRET_KEY = 'b)p7@mql(&!^j9_r43+q^^r#w0b^wio!^b!it8w!@hmd2z^q3s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+# ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
